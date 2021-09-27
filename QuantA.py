@@ -38,7 +38,6 @@ print ('1-os užduoties atsakymas')
 row=df.loc[df['Date']=='2013.04.19']
 print (row['Portfolio Value'])
 print ('2-os užduoties atsakymas')
-df.iloc[df['Portfolio Value'].rolling(window=2).apply(np.diff).idxmin()]
 print (df.iloc[df['Portfolio Value'].rolling(window=2).apply(np.diff).idxmin(),:8])
 print ('3-os užduoties atsakymas')
 print (cutoff1)
