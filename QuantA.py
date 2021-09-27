@@ -1,15 +1,9 @@
 import pandas as pd
-
 import math
-
 from scipy.stats import norm
-
 import Constant
-
 import BlackScholes 
-
 import numpy as np
-
 import matplotlib.pyplot as plt  
 
 cols=range(0,7)
