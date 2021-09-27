@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 
 cols=range(0,7)
 df = pd.read_excel (r'Test_candidates.xlsx', usecols=cols)
-Portfolio = pd.read_excel ('Test_candidates.xlsx', sheet_name='Portfolio values')
 
 for index, row in df.iterrows():
     a=BlackScholes.Call (float(row["GOOGLE PRICE"]), Constant.KGoogleCall,Constant.r,Constant.t, float(row["GOOGLE VOL"]))
